@@ -19,9 +19,4 @@ public class GreetingTest {
     public void sayHelloTest() {
         assertEquals("Hello", greeting.sayHello());
     }
-
-    @Test
-    public void sayHiTest() {
-        assertEquals("Hello", greeting.sayHi());
-    }
 }
