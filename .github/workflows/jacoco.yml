@@ -22,3 +22,8 @@ jobs:
         java-version: 1.8
     - name: Generate Report
       run: mvn clean verify
+    - name: Archive Jacoco reports
+      uses: actions/upload-artifact@v1
+      with:
+        name: jacoco-reports
+        path: target/site/jacoco
